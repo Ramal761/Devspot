@@ -2,15 +2,30 @@
 import { Dribbble, Facebook, Github, MessageCircle, Twitter } from "lucide-react";
 import { useEffect, useState } from "react";
 
+
+import ahmad from "../assets/ahmad.4b465c090513ec459867.png";
+import humair from "../assets/humair.b53fe1d6abe0ecf40751.png";
+import aqdas from "../assets/aqdas.d091e8270a272e1ee00c.png";
+import gull from "../assets/gull.a6d30c439a1b7a17af4e.png";
+import zahid from "../assets/zahid.e7dfaacf216d8c2bb19c.png";
+import arif from "../assets/arif.678a24bc2963ea5c1689.png";
+import logo from "../assets/logo_without_text.8694dff2e5004a9c04bc.png";
+ import logo_without_line from "../assets/logo_without_line.bdc589508ea85f49e393.png";
+
+
+import CEO from "../assets/CEO.319188af9d31f98c8a3b.png";
+
 const About = () => {
-  const teamMembers = [
-    { img: "../src/assets/ahmad.4b465c090513ec459867.png", logo: "../src/assets/logo_without_text.8694dff2e5004a9c04bc.png", name: "Ahmad ali", skills: "UI/UX Designer" },
-    { img: "../src/assets/humair.b53fe1d6abe0ecf40751.png", logo: "../src/assets/logo_without_text.8694dff2e5004a9c04bc.png", name: "Ali Raza", skills: "Frontend Developer" },
-    { img: "../src/assets/aqdas.d091e8270a272e1ee00c.png", logo: "../src/assets/logo_without_text.8694dff2e5004a9c04bc.png", name: "Abdul Malik", skills: "Backend Engineer" },
-    { img: "../src/assets/gull.a6d30c439a1b7a17af4e.png", logo: "../src/assets/logo_without_text.8694dff2e5004a9c04bc.png", name: "Hassan Iqbal", skills: "Project Manager" },
-    { img: "../src/assets/zahid.e7dfaacf216d8c2bb19c.png", logo: "../src/assets/logo_without_text.8694dff2e5004a9c04bc.png", name: "Ahmed", skills: "QA Analyst" },
-    { img: "../src/assets/arif.678a24bc2963ea5c1689.png", logo: "../src/assets/logo_without_text.8694dff2e5004a9c04bc.png", name: "Usman Tariq", skills: "Full Stack Developer" },
-  ];
+  
+     const teamMembers = [
+  { img: ahmad, logo, name: "Ahmad Ali", skills: "UI/UX Designer" },
+  { img: humair, logo, name: "Ali Raza", skills: "Frontend Developer" },
+  { img: aqdas, logo, name: "Abdul Malik", skills: "Backend Engineer" },
+  { img: gull, logo, name: "Hassan Iqbal", skills: "Project Manager" },
+  { img: zahid, logo, name: "Ahmed", skills: "QA Analyst" },
+  { img: arif, logo, name: "Usman Tariq", skills: "Full Stack Developer" },
+];
+
 
   const [startIndex, setStartIndex] = useState(0);
 
@@ -35,21 +50,20 @@ const About = () => {
          About Us
 
      </h1> 
-        </div>        <svg
-className="  rotate-180 "
-  viewBox="0 0 4937 100"
-  xmlns="http://www.w3.org/2000/svg">
+        </div>
+        <svg
+      className="  rotate-180 "
+        viewBox="0 0 4937 100"
+      xmlns="http://www.w3.org/2000/svg">
   <path
     fill="#F3F4F6"
     d="M0,10L34.3,18.3C68.6,27,137,43,206,55C274.3,67,343,73,411,75C480,77,549,73,617,65C685.7,57,754,43,823,33.3C891.4,23,960,17,1029,18.3C1097.1,20,1166,30,1234,31.7C1302.9,33,1371,27,1440,23.3C1508.6,20,1577,20,1646,28.3C1714.3,37,1783,53,1851,56.7C1920,60,1989,50,2057,40C2125.7,30,2194,20,2263,23.3C2331.4,27,2400,43,2469,55C2537.1,67,2606,73,2674,71.7C2742.9,70,2811,60,2880,50C2948.6,40,3017,30,3086,26.7C3154.3,23,3223,27,3291,36.7C3360,47,3429,63,3497,73.3C3565.7,83,3634,87,3703,75C3771.4,63,3840,37,3909,23.3C3977.1,10,4046,10,4114,10C4182.9,10,4251,10,4320,13.3C4388.6,17,4457,23,4526,28.3C4594.3,33,4663,37,4731,31.7C4800,27,4869,13,4903,6.7L4937.1,0L4937.1,100L0,100Z"
    /> </svg>
 
-      {/* Header */}
      
 
-      {/* CEO Section */}
       <div className="flex flex-col lg:flex-row items-center lg:items-start px-6 lg:px-20 py-12 gap-8">
-        <img className="w-48 sm:w-60 lg:w-72" src="../src/assets/CEO.319188af9d31f98c8a3b.png" alt="CEO" />
+         <img className="w-48 sm:w-60 lg:w-72" src={CEO} alt="CEO" />
         <div className="flex flex-col max-w-2xl">
           <h1 className="text-3xl sm:text-4xl font-bold text-blue-950">Syed Aleem Haider</h1>
           <p className="text-blue-600 font-semibold text-lg sm:text-xl mt-2">Chief Executive Officer</p>
@@ -59,7 +73,6 @@ className="  rotate-180 "
         </div>
       </div>
 
-      {/* Mission & Vision */}
       <div className="flex flex-col  gap-8 px-6 lg:px-44 mb-12">
         <div className="flex-1 bg-[#FABD38] rounded-3xl p-16 relative">
           <h2 className="text-2xl sm:text-3xl font-bold text-white">Empowering Businesses, Inspiring Innovation</h2>
@@ -95,7 +108,6 @@ className="  rotate-180 "
           </div>
         </div>
           </div>
-      {/* Values Section */}
       <section className="max-w-6xl mx-auto py-16 px-6">
         <h2 className="text-4xl font-bold mb-12 text-center sm:text-left">
           Our <span className="text-orange-400">Values</span>
@@ -121,7 +133,6 @@ className="  rotate-180 "
         </div>
       </section>
 
-      {/* Team Section */}
       <div className="h-full w-full py-10 px-6 lg:px-20">
         <h3 className="text-center text-4xl font-bold mb-10 text-gray-800">Our Team</h3>
 
@@ -150,7 +161,6 @@ className="  rotate-180 "
         className="w-full min-h-screen flex items-start justify-center bg-white px-6 "
       >
         <div className="flex flex-col lg:flex-row gap-6 lg:gap-10 max-w-6xl w-full">
-          {/* Left Text Section */}
           <div className="flex flex-col w-full max-w-xl lg:text-left">
             <h1 className="text-4xl font-semibold text-gray-800 mb-3">
               <span className="text-orange-400">Contact</span> Us
@@ -161,7 +171,6 @@ className="  rotate-180 "
             </p>
           </div>
 
-          {/* Right Form Section */}
           <form className="bg-gradient-to-tr from-[#ED8B29] to-[#FFD23F] rounded-3xl px-10 py-10 flex flex-col gap-5 w-full max-w-xl shadow-lg">
             <input
               type="text"
@@ -216,17 +225,17 @@ className="  rotate-180 "
         </div>
       </section>
 
-      {/* 🔹 Footer */}
       <footer className="bg-gray-100 border-t border-gray-300 mt-6">
         <div className="mx-auto w-full max-w-screen-xl p-6 lg:py-8">
           <div className="md:flex md:justify-between">
             <div className="mb-6 md:mb-0">
               <a href="#/" className="flex items-center">
                 <img
-                  src="../src/assets/logo_without_line.bdc589508ea85f49e393.png"
-                  className="h-12 me-3"
-                  alt="Devspots Logo"
-                />
+  src={logo_without_line}
+  className="h-12 m-3"
+  alt="Devspots Logo"
+/>
+
               </a>
             </div>
 

@@ -8,6 +8,10 @@ import ProjectDetail from "./Pages/Projectdetail";
 import { useEffect, useState } from "react";
 import { Menu, X, MessageCircle, PhoneCall } from "lucide-react"; 
 
+
+import logo from "./assets/logo_without_line.bdc589508ea85f49e393.png";
+
+
 function App() {
   const [animate, setAnimate] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -79,11 +83,13 @@ function App() {
         }}
         className="w-full fixed z-20 h-20 border-b border-yellow-400 bg-white shadow-sm flex items-center justify-between px-5 lg:px-36"
       >
-        <img
-          src="src/assets/logo_without_line.bdc589508ea85f49e393.png"
-          alt="Logo"
-          className="object-contain w-36 h-30"
-        />
+       
+       <img
+  src={logo}
+  alt="Logo"
+  className="object-contain w-36 h-30"
+/>
+
 
         <div className="hidden md:flex gap-6 text-blue-950 font-medium">
           {navLinks}

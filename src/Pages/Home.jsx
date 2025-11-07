@@ -1,5 +1,12 @@
 import React, { useEffect, useState } from "react";
 
+
+
+
+import divider from "../assets/download.png";
+import logo from "../assets/logo_without_line.bdc589508ea85f49e393.png";
+import logoWithoutText from "../assets/logo_without_text.8694dff2e5004a9c04bc.png";
+
 import { ArrowUpRight, ChevronLeft, ChevronRight, Facebook,
   Twitter,
   Github,
@@ -32,6 +39,28 @@ import s9 from "../assets/Cloud-Integration.745aac2bcb8e2313320f.webp";
 import s10 from "../assets/quality-assurance.9dca9f5f838f4c90a0c2.webp";
 import s11 from "../assets/web-design.42b4290222cde15d9713.webp";
 import s12 from "../assets/SaaS.c6dbde4b9fcb8bc4357c.webp";
+
+
+
+import phpLogo from "../assets/php-logo.bb5b04a0a132a9a512be.png";
+import flutterLogo from "../assets/flutter-logo.f5928f941cedc0416f41.png";
+import reactLogo from "../assets/react-logo.08aa92609e25b3be078f.png";
+import nodejsLogo from "../assets/nodejs-logo.8554552a79e2305d4270.png";
+import expressLogo from "../assets/express-js-logo.0753fdbd9e3ac30a5a89.png";
+import laravelLogo from "../assets/laravel-logo.77392bcc0ce40226f7c3.png";
+import figmaLogo from "../assets/figma-logo.6730d6604d7ee8d8fe7e.png";
+import pythonLogo from "../assets/python_logo.003220f38009e046bb04.png";
+import langgraphLogo from "../assets/langgraph_logo.265d8f0502836cef91e1.png";
+import pytorchLogo from "../assets/pytorch_logo.f51803954e5c4cbff903.png";
+import langchainLogo from "../assets/langchain_logo.c5ee2032ee6d42216f12.png";
+import tensorflowLogo from "../assets/Tensorflow_logo.3bcfaf6f32a6f12a6064.png";
+import n8nLogo from "../assets/n8n-logo-hd.0ef6276fbf326697cf82.webp";
+
+
+
+import project1 from "../assets/thumbnail.3e3ccf792ad1e6e8f90b.png";
+import project2 from "../assets/thumbnail.cef3f20ac5ce8c2c56f3.png";
+import project3 from "../assets/thumbnail.611b66e244e2ee3ea3a2.png";
 
 
 const Home= () => {
@@ -73,21 +102,6 @@ const Home= () => {
     return images[(index + i) % images.length];
   });
 
-  const techStack = [
-    { name: "PHP", logo: "/src/assets/php-logo.bb5b04a0a132a9a512be.png" },
-    { name: "Flutter", logo: "/src/assets/flutter-logo.f5928f941cedc0416f41.png" },
-    { name: "React Js", logo: "/src/assets/react-logo.08aa92609e25b3be078f.png" },
-    { name: "Node Js", logo: "/src/assets/nodejs-logo.8554552a79e2305d4270.png" },
-    { name: "Express Js", logo: "/src/assets/express-js-logo.0753fdbd9e3ac30a5a89.png" },
-    { name: "Laravel", logo: "/src/assets/laravel-logo.77392bcc0ce40226f7c3.png" },
-    { name: "Figma", logo: "/src/assets/figma-logo.6730d6604d7ee8d8fe7e.png" },
-    { name: "Python", logo: "/src/assets/python_logo.003220f38009e046bb04.png" },
-    { name: "LangGraph", logo: "/src/assets/langgraph_logo.265d8f0502836cef91e1.png" },
-    { name: "PyTorch", logo: "/src/assets/pytorch_logo.f51803954e5c4cbff903.png" },
-    { name: "LangChain", logo: "/src/assets/langchain_logo.c5ee2032ee6d42216f12.png" },
-    { name: "Tensorflow", logo: "/src/assets/Tensorflow_logo.3bcfaf6f32a6f12a6064.png" },
-    { name: "N8n", logo: "/src/assets/n8n-logo-hd.0ef6276fbf326697cf82.webp" },
-  ];
   
   
   const [showAll, setShowAll] = useState(false);
@@ -110,20 +124,7 @@ const Home= () => {
 ];
 
   
-  // const services = [
-  //   { title: "Web Development", img: "/src/assets/gen-ai.4debed1be59aedb40b16.webp" },
-  //   { title: "App Development", img: "/src/assets/app.1bdc2a9bf0aa5b536145.webp" },
-  //   { title: "UI/UX Design", img: "/src/assets/staff-augmentation.6ef5ef8473c0775a7006.webp" },
-  //   { title: "Digital Marketing", img: "/src/assets/devops.d7292b47afe57275b242.webp" },
-  //   { title: "SEO Optimization", img: "/src/assets/UIux.dfd9118771d997e340d6.webp" },
-  //   { title: "Cloud Solutions", img: "/src/assets/webdev.46792be54dda855c93d1.webp" },
-  //   { title: "E-Commerce", img: "/src/assets/Custom-software-development.60201810629638bfe540.webp" },
-  //   { title: "Brand Strategy", img: "/src/assets/Data-Analytics.36e15d640de5a7cd2f69.webp" },
-  //   { title: "AI Integration", img: "/src/assets/Cloud-Integration.745aac2bcb8e2313320f.webp" },
-  //   { title: "Data Analytics", img: "/src/assets/quality-assurance.9dca9f5f838f4c90a0c2.webp" },
-  //   { title: "Cybersecurity", img: "/src/assets/web-design.42b4290222cde15d9713.webp" },
-  //   { title: "Maintenance & Support", img: "/src/assets/SaaS.c6dbde4b9fcb8bc4357c.webp" },
-  // ];
+  
 
   const visibleServices = showAll ? services : services.slice(0, 3);
     
@@ -153,21 +154,43 @@ const Home= () => {
       desc: "A continuous process that identifies updates needed for market changes, while providing full dedicated support to clients when required.",
     },
   ];
+  
+  const techStack = [
+  { name: "PHP", logo: phpLogo },
+  { name: "Flutter", logo: flutterLogo },
+  { name: "React Js", logo: reactLogo },
+  { name: "Node Js", logo: nodejsLogo },
+  { name: "Express Js", logo: expressLogo },
+  { name: "Laravel", logo: laravelLogo },
+  { name: "Figma", logo: figmaLogo },
+  { name: "Python", logo: pythonLogo },
+  { name: "LangGraph", logo: langgraphLogo },
+  { name: "PyTorch", logo: pytorchLogo },
+  { name: "LangChain", logo: langchainLogo },
+  { name: "Tensorflow", logo: tensorflowLogo },
+  { name: "N8n", logo: n8nLogo },
+];
 
-  const recentProjects = [
+const recentProjects = [
   {
-    img: "../src/assets/thumbnail.3e3ccf792ad1e6e8f90b.png",
-    title: "Unleash Your Mind with BrainStormer: Exploring the UI Design of a Cutting-Edge Quiz App",
+    img: project1,
+    title:
+      "Unleash Your Mind with BrainStormer: Exploring the UI Design of a Cutting-Edge Quiz App",
   },
   {
-    img: "../src/assets/thumbnail.cef3f20ac5ce8c2c56f3.png",
-    title: "Manthar – Your Ultimate Companion for Hassle-Free Online Bus Ticket Booking Across Pakistan",
+    img: project2,
+    title:
+      "Manthar – Your Ultimate Companion for Hassle-Free Online Bus Ticket Booking Across Pakistan",
   },
   {
-    img: "src/assets/thumbnail.611b66e244e2ee3ea3a2.png",
-    title: "Welcome to SLOVE – Your Ultimate Destination for Streaming, Sharing, and Discovering Music Worldwide",
+    img: project3,
+    title:
+      "Welcome to SLOVE – Your Ultimate Destination for Streaming, Sharing, and Discovering Music Worldwide",
   },
 ];
+
+  
+
   
 
   return (
@@ -359,11 +382,9 @@ const Home= () => {
      </div>
               
         {/* 4th page */}
-           <img
-        src="../src/assets/download.png"
-        alt="divider"
-        className="w-full mt-20 "
-      />
+           
+           <img src={divider} alt="divider" className="w-full mt-20" />
+
              <div className="w-full bg-[#F6FCFF] py-20 flex flex-col items-center px-4 sm:px-10">
       <h1 className="text-center font-bold text-4xl sm:text-5xl text-blue-950 mb-16">
         DevSpots Services to Transform Your Business
@@ -396,11 +417,9 @@ const Home= () => {
         </button>
       </div>
         </div>
-      <img
-        src="src/assets/download.png"
-        alt="divider"
-      
-      />
+    
+      <img src={divider} alt="divider" />
+
 
       {/* 5th page */}
        
@@ -460,11 +479,12 @@ const Home= () => {
         {recentProjects.map((item, i) => (
           <div key={i} className="group w-[350px]">
             <div className="relative w-[350px] h-[350px] rounded-2xl overflow-hidden">
-              <img
-                src="../src/assets/logo_without_text.8694dff2e5004a9c04bc.png"
-                alt="logo"
-                className="w-16 absolute top-2 left-2 "
-              />
+              
+    <img
+  src={logoWithoutText}
+  alt="logo"
+  className="w-16 absolute top-2 left-2"
+/>
               <img
                 src={item.img}
                 alt="thumbnail"
@@ -613,11 +633,9 @@ const Home= () => {
     <div className="flex flex-col md:flex-row md:justify-between gap-8 md:gap-0">
       <div className="flex items-center">
         <a href="#/" className="flex items-center">
-          <img
-            src="../src/assets/logo_without_line.bdc589508ea85f49e393.png"
-            className="h-12 w-auto"
-            alt="Devspots Logo"
-          />
+         
+         <img src={logo} alt="Devspots Logo" className="h-12" />
+
         </a>
       </div>
 
