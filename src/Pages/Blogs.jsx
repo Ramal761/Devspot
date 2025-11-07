@@ -20,7 +20,7 @@ const Blog = () => {
 
 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-20 mx-auto w-fit">
   <div className=" flex flex-col w-96 h-[600px] border-2 border-gray-100 rounded-md ">
-    <img  className="m-5 rounded-md h-60"  src="src/assets/blog1.292ece9c470db3ac47b9.jpeg" alt="" />
+    <img  className="m-5 rounded-md h-60"  src="../src/assets/blog1.292ece9c470db3ac47b9.jpeg" alt="" />
     <h1 className="text-2xl ml-6 font-semibold hover:text-orange-400 cursor-pointer">Why React Remains the Most Popular Frontend Library in<br/> 2025</h1>
     <p className="text-[18px] m-5 text-blue-950">In the ever-evolving world of web development, trends come and go, but React has consistently held its ground as the leading...</p>
     <Link to="/blogdetails">
@@ -31,7 +31,7 @@ const Blog = () => {
   </div>
 
   <div className="w-96 h-[600px] flex flex-col border-2 border-gray-100 rounded-md  ">
-    <img  className="m-5 rounded-md h-60"  src="src/assets/blog2.4243bf02ca200433663e.jpeg" alt="" />
+    <img  className="m-5 rounded-md h-60"  src="../src/assets/blog2.4243bf02ca200433663e.jpeg" alt="" />
     <h1 className="text-2xl ml-6 font-semibold hover:text-orange-400 cursor-pointer">Unlocking ROI: How Strategic Application Development <br/>Drives Business Growth</h1>
     <p className="text-[18px] m-5 text-blue-950">Strategic application development is a disciplined approach where every technical decision maps back to business objectives...</p>
    <Link to="/blogdetails">
@@ -43,7 +43,7 @@ const Blog = () => {
 
 
   <div className="w-96 h-[600px] flex flex-col border-2 border-gray-100 rounded-md ">
-    <img  className="m-5 rounded-md h-60"  src="src/assets/blog3.0cf2c14f949b3fb3778a.jpeg" alt="" />
+    <img  className="m-5 rounded-md h-60"  src="../src/assets/blog3.0cf2c14f949b3fb3778a.jpeg" alt="" />
     <h1 className="text-2xl ml-6 font-semibold hover:text-orange-400 cursor-pointer">From Creativity to Automation: Uses and Opportunities of Generative AI</h1>
     <p className="text-[18px] m-5 text-blue-950">Generative artificial intelligence is reshaping how organisations and creators solve problems. Once mostly confined to labs...</p>
   <Link to="/blogdetails">
@@ -53,7 +53,7 @@ const Blog = () => {
 </Link>
   </div>
   <div className="w-96 h-[600px] flex flex-col border-2 border-gray-100  rounded-md ">
-   <img  className="m-5 rounded-md h-60"  src="src/assets/blog4.3f0ee18977cfd8965323.jpeg" alt="" />
+   <img  className="m-5 rounded-md h-60"  src="../src/assets/blog4.3f0ee18977cfd8965323.jpeg" alt="" />
     <h1 className="text-2xl ml-6 font-semibold hover:text-orange-400 cursor-pointer">Why Backend Optimization Matters More Than Ever in <br/>2025</h1>
     <p className="text-[18px] m-5 text-blue-950">In a digital world where attention spans are shorter than ever, performance is everything. Whether someone is using a SaaS...</p>
   <Link to="/blogdetails">
@@ -62,7 +62,7 @@ const Blog = () => {
   </button>
 </Link>  </div>
   <div className="w-96 h-[600px] flex flex-col border-2 border-gray-100 rounded-md  cursor-pointer">
-    <img  className="m-5 rounded-md h-60"  src="src/assets/blog5.d639e3a09f1f6995d30b.jpeg" alt="" />
+    <img  className="m-5 rounded-md h-60"  src="../src/assets/blog5.d639e3a09f1f6995d30b.jpeg" alt="" />
     <h1 className="text-2xl ml-6 font-semibold hover:text-orange-400 cursor-pointer">Deploying Smarter — Lessons I Learned from Real-World AWS Projects</h1>
     <p className="text-[18px] m-5 text-blue-950">Deployment is one of those stages in software development that can either make or break a project. You can write the cleanest...</p>
   <Link to="/blogdetails">
@@ -154,7 +154,7 @@ const Blog = () => {
             <div className="mb-6 md:mb-0">
               <a href="#/" className="flex items-center">
                 <img
-                  src="src/assets/logo_without_line.bdc589508ea85f49e393.png"
+                  src="../src/assets/logo_without_line.bdc589508ea85f49e393.png"
                   className="h-12 me-3"
                   alt="Devspots Logo"
                 />

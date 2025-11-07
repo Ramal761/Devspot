@@ -27,41 +27,41 @@ const Project = () => {
    
   {[
     {
-      img: "src/assets/thumbnail.d0b239cb31a71fddda97.png",
+      img: "../src/assets/thumbnail.d0b239cb31a71fddda97.png",
       title: "Unleash Your Mind with BrainStormer: Exploring the UI Design of a Cutting-Edge Quiz App"
     },
     {
-      img: "src/assets/thumbnail.73a6e1c0b285dc8da1bb.png",
+      img: "../src/assets/thumbnail.73a6e1c0b285dc8da1bb.png",
       title: "Manthar – Your Ultimate Companion for Hassle-Free Online Bus Ticket Booking Across Pakistan"
     },
     {
-      img: "src/assets/thumbnail.e5848ea560566193af26 (1).png",
+      img: "../src/assets/thumbnail.e5848ea560566193af26 (1).png",
       title: "Welcome to SLOVE – Your Ultimate Destination for Streaming, Sharing, and Discovering Music Worldwide"
     }
 ,
      {
-      img: "src/assets/thumbnail.6f34ac1ec8fcf101dbb1.png",
+      img: "../src/assets/thumbnail.6f34ac1ec8fcf101dbb1.png",
       title: "Unleash Your Mind with BrainStormer: Exploring the UI Design of a Cutting-Edge Quiz App"
     },
     {
-      img: "src/assets/thumbnail.27d52a9ae2040f8ed4a4.png",
+      img: "../src/assets/thumbnail.27d52a9ae2040f8ed4a4.png",
       title: "Manthar – Your Ultimate Companion for Hassle-Free Online Bus Ticket Booking Across Pakistan"
     },
     {
-      img: "src/assets/thumbnail.dadec973137d43c0fcb9.png",
+      img: "../src/assets/thumbnail.dadec973137d43c0fcb9.png",
       title: "Welcome to SLOVE – Your Ultimate Destination for Streaming, Sharing, and Discovering Music Worldwide"
     }
 ,
      {
-      img: "src/assets/thumbnail.3e3ccf792ad1e6e8f90b.png",
+      img: "../src/assets/thumbnail.3e3ccf792ad1e6e8f90b.png",
       title: "Unleash Your Mind with BrainStormer: Exploring the UI Design of a Cutting-Edge Quiz App"
     },
     {
-      img: "src/assets/thumbnail.cef3f20ac5ce8c2c56f3.png",
+      img: "../src/assets/thumbnail.cef3f20ac5ce8c2c56f3.png",
       title: "Manthar – Your Ultimate Companion for Hassle-Free Online Bus Ticket Booking Across Pakistan"
     },
     {
-      img: "src/assets/thumbnail.611b66e244e2ee3ea3a2.png",
+      img: "../src/assets/thumbnail.611b66e244e2ee3ea3a2.png",
       title: "Welcome to SLOVE – Your Ultimate Destination for Streaming, Sharing, and Discovering Music Worldwide"
     },
    
@@ -76,7 +76,7 @@ const Project = () => {
   >
     <div className="relative h-full w-[350px] ">
       <img
-        src="src/assets/logo_without_text.8694dff2e5004a9c04bc.png"
+        src="../src/assets/logo_without_text.8694dff2e5004a9c04bc.png"
         alt="logo"
         className="w-16 absolute top-2 left-2 transition-all duration-300 group-hover:scale-105"
       />
@@ -179,7 +179,7 @@ const Project = () => {
             <div className="mb-6 md:mb-0">
               <a href="#/" className="flex items-center">
                 <img
-                  src="src/assets/logo_without_line.bdc589508ea85f49e393.png"
+                  src="../src/assets/logo_without_line.bdc589508ea85f49e393.png"
                   className="h-12 me-3"
                   alt="Devspots Logo"
                 />

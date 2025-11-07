@@ -1,251 +1,15 @@
 
-// import { Dribbble, Facebook, Github, MessageCircle, Twitter } from "lucide-react";
-// import { useEffect, useState } from "react";
-// const About = () => {
- 
-  
-// const teamMembers = [
-//   { 
-//     img: "src/assets/ahmad.4b465c090513ec459867.png", 
-//     logo: "src/assets/logo_without_text.8694dff2e5004a9c04bc.png", 
-//     name: "Ahmad ali", 
-//     skills: "UI/UX Designer" 
-//   },
-//   { 
-//     img: "src/assets/humair.b53fe1d6abe0ecf40751.png", 
-//     logo: "src/assets/logo_without_text.8694dff2e5004a9c04bc.png", 
-//     name: "Ali Raza", 
-//     skills: "Frontend Developer" 
-//   },
-//   { 
-//     img: "src/assets/aqdas.d091e8270a272e1ee00c.png", 
-//     logo: "src/assets/logo_without_text.8694dff2e5004a9c04bc.png", 
-//     name: "Abdul Malik", 
-//     skills: "Backend Engineer" 
-//   },
-//   { 
-//     img: "src/assets/gull.a6d30c439a1b7a17af4e.png", 
-//     logo: "src/assets/logo_without_text.8694dff2e5004a9c04bc.png", 
-//     name: "Hassan Iqbal", 
-//     skills: "Project Manager" 
-//   },
-//   { 
-//     img: "src/assets/zahid.e7dfaacf216d8c2bb19c.png", 
-//     logo: "src/assets/logo_without_text.8694dff2e5004a9c04bc.png", 
-//     name: "Ahmed", 
-//     skills: "QA Analyst" 
-//   },
-//   { 
-//     img: "src/assets/arif.678a24bc2963ea5c1689.png", 
-//     logo: "src/assets/logo_without_text.8694dff2e5004a9c04bc.png", 
-//     name: "Usman Tariq", 
-//     skills: "Full Stack Developer" 
-//   },
-// ];
-
-
-//   const [startIndex, setStartIndex] = useState(0);
-
-//   useEffect(() => {
-//     const interval = setInterval(() => {
-//       setStartIndex((prev) => (prev + 1) % teamMembers.length);
-//     }, 2000); 
-//     return () => clearInterval(interval);
-//   }, [teamMembers.length]);
-
-//   const visibleMembers = Array.from({ length: 3 }).map((_, i) => {
-//     const index = (startIndex + i) % teamMembers.length;
-//     return teamMembers[index];
-//   });
-
-
-//   return (
-//     <section
-//       id="about"
-//       className="h-screen " >
-//         <div className=" h-56 bg-gray-100">
-//          <h1 className="p-30 font-bold text-4xl text-blue-950">
-//          About Us
-//       </h1> 
-//         </div>
-//        <svg
-//   className="  rotate-180 "
-//   viewBox="0 0 4937 100"
-//   xmlns="http://www.w3.org/2000/svg">
-//   <path
-//     fill="#F3F4F6"
-//     d="M0,10L34.3,18.3C68.6,27,137,43,206,55C274.3,67,343,73,411,75C480,77,549,73,617,65C685.7,57,754,43,823,33.3C891.4,23,960,17,1029,18.3C1097.1,20,1166,30,1234,31.7C1302.9,33,1371,27,1440,23.3C1508.6,20,1577,20,1646,28.3C1714.3,37,1783,53,1851,56.7C1920,60,1989,50,2057,40C2125.7,30,2194,20,2263,23.3C2331.4,27,2400,43,2469,55C2537.1,67,2606,73,2674,71.7C2742.9,70,2811,60,2880,50C2948.6,40,3017,30,3086,26.7C3154.3,23,3223,27,3291,36.7C3360,47,3429,63,3497,73.3C3565.7,83,3634,87,3703,75C3771.4,63,3840,37,3909,23.3C3977.1,10,4046,10,4114,10C4182.9,10,4251,10,4320,13.3C4388.6,17,4457,23,4526,28.3C4594.3,33,4663,37,4731,31.7C4800,27,4869,13,4903,6.7L4937.1,0L4937.1,100L0,100Z"
-//   />
-// </svg>
-
-// <div className="flex p-20 ">
-//   <img className="w-74"  src="src/assets/CEO.319188af9d31f98c8a3b.png" alt="" />
-//   <div className="flex flex-col">
-//      <h1 className="mt-24 ml-10 font-bold text-4xl text-blue-950">
-// Syed Aleem Haider </h1>
-// <p className="text-blue-600 ml-10 mt-3 font-semibold text-[20px]">Chief Executive Officer</p>
-// <p className="ml-10 mt-3 text-gray-500">At DevSpots.us,we believe technology should not just solve problems.it should anticipate them. Every line of code we write, every AI agent we build, and every platform we design is driven by one purpose: to create intelligence that empowers. We’re not just developers; we’re enablers of the future — where businesses thrive through automation, and innovation becomes instinct. Let’s build a world where your digital presence doesn’t just exist — it evolves.</p>
-// </div> 
-// </div>
-
-//     <div className="w-[1200px] h-60 rounded-3xl  mx-auto bg-[#FABD38] relative">
-//       <h1 className="text-3xl text-white font-bold p-6">Empowering Businesses, Inspiring Innovation</h1>
-//       <p className="text-white text-[18px] text-center">At DevSpots, we specialize in transforming businesses with enterprise-grade software solutions tailored to their needs. With a legacy of technical excellence, a global team of over 2,000 experts, and a passion for innovation, we help organizations thrive in an ever-evolving digital landscape.
-// </p>
-//      <button className=" absolute right-7 rounded-lg font-semibold text-orange-400 bottom-6 w-30 h-10 bg-white">Get in Touch</button>
-//       </div>   
-   
-//    <div className="w-60 p-20 h-full">
-//       <h1 className=" font-bold ml-20 text-4xl w-60 text-blue-950">
-//          Our Mission </h1>
-//        <div className="w-[1200px] h-48 border border-gray-300 m-18 rounded-3xl relative ">
-//         <svg
-//   className="w-20 h-20  text-black absolute right-14 bg-orange-400 rounded-full p-4  bottom-[160px] "
-//   xmlns="http://www.w3.org/2000/svg"
-//   viewBox="0 0 16 14"
-//   fill="currentColor">
-//   <path d="M14.5 7H12V5C12 3.89688 12.8969 3 14 3H14.25C14.6656 3 15 2.66563 15 2.25V0.75C15 0.334375 14.6656 0 14.25 0H14C11.2375 0 9 2.2375 9 5V12.5C9 13.3281 9.67188 14 10.5 14H14.5C15.3281 14 16 13.3281 16 12.5V8.5C16 7.67188 15.3281 7 14.5 7ZM5.5 7H3V5C3 3.89688 3.89688 3 5 3H5.25C5.66563 3 6 2.66563 6 2.25V0.75C6 0.334375 5.66563 0 5.25 0H5C2.2375 0 0 2.2375 0 5V12.5C0 13.3281 0.671875 14 1.5 14H5.5C6.32812 14 7 13.3281 7 12.5V8.5C7 7.67188 6.32812 7 5.5 7Z" />
-// </svg>
-//         <p className="text-[20px] m-14">To deliver next-generation web, mobile, and AI-driven solutions that redefine user experience, automate complexity, and unlock boundless potential for global enterprises through technology that thinks, adapts, and evolves
-// </p>
-
-//         </div> 
-
-//            <div className="w-60 mx-auto h-full">
-//       <h1 className=" font-bold ml-20 text-4xl w-60 text-blue-950">
-//          Our Vision </h1>
-//        <div className="w-[1200px] h-48 border border-gray-300 m-18 rounded-3xl relative ">
-//         <svg
-//   className="w-20 h-20  text-black absolute right-14 bg-orange-400 rounded-full p-4  bottom-[160px] "
-//   xmlns="http://www.w3.org/2000/svg"
-//   viewBox="0 0 16 14"
-//   fill="currentColor"
-// >
-//   <path d="M14.5 7H12V5C12 3.89688 12.8969 3 14 3H14.25C14.6656 3 15 2.66563 15 2.25V0.75C15 0.334375 14.6656 0 14.25 0H14C11.2375 0 9 2.2375 9 5V12.5C9 13.3281 9.67188 14 10.5 14H14.5C15.3281 14 16 13.3281 16 12.5V8.5C16 7.67188 15.3281 7 14.5 7ZM5.5 7H3V5C3 3.89688 3.89688 3 5 3H5.25C5.66563 3 6 2.66563 6 2.25V0.75C6 0.334375 5.66563 0 5.25 0H5C2.2375 0 0 2.2375 0 5V12.5C0 13.3281 0.671875 14 1.5 14H5.5C6.32812 14 7 13.3281 7 12.5V8.5C7 7.67188 6.32812 7 5.5 7Z" />
-// </svg>
-//           <p className="text-[20px] m-14">To pioneer the future of intelligent digital transformation by merging innovation, design, and autonomous AI — empowering businesses to operate smarter, faster, and more humanly
-// </p>
-//    </div> 
-
-//    </div>
-//    </div>
-     
-//   <section class="max-w-6xl mx-auto  py-16">
-//       <h2 class="text-4xl font-bold mb-12">
-//         Our <span class="text-orange-400">Values</span>
-//       </h2>
-
-//       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-//         <div class="flex flex-col space-y-3">
-//           <div class="flex items-center space-x-3">
-//             <div className="w-13 h-13 border border-orange-400 rounded-full p-[5px]">
-//             <div
-//               class="w-10 h-10 flex items-center justify-center border-4 border-orange-400 rounded-full text-orange-500 font-semibold">
-//               1
-//             </div>
-//             </div>
-//             <h3 class="text-lg font-bold">Ship & Iterate</h3>
-//           </div>
-//           <p class="text-gray-600">
-//             We move swiftly, refining our approach with every step to maintain a
-//             leading edge.
-//           </p>
-//         </div>
-
-//         <div class="flex flex-col space-y-3">
-//           <div class="flex items-center space-x-3">
-//              <div className="w-13 h-13 border border-orange-400 rounded-full p-[5px]">
-//             <div
-//               class="w-10 h-10 flex items-center justify-center border-4 border-orange-400 rounded-full text-orange-500 font-semibold">
-//               2
-//             </div>
-//             </div>  
-//             <h3 class="text-lg font-bold">Trusted Pair of Hands</h3>
-//           </div>
-//           <p class="text-gray-600">
-//             Dependable and steadfast, we are always there when it matters most.
-//           </p>
-//         </div>
-
-//         <div class="flex flex-col space-y-3">
-//           <div class="flex items-center space-x-3">
-//               <div className="w-13 h-13 border border-orange-400 rounded-full p-[5px]">
-//             <div
-//               class="w-10 h-10 flex items-center justify-center border-4 border-orange-400 rounded-full text-orange-500 font-semibold">
-//               3
-//             </div>
-//             </div>
-           
-//             <h3 class="text-lg font-bold">Overdeliver on the Promise</h3>
-//           </div>
-//           <p class="text-gray-600">
-//             Exceeding expectations is our standard, going beyond what’s assured.
-//           </p>
-//         </div>
-
-//         <div class="flex flex-col space-y-3 sm:col-span-2 lg:col-span-1">
-//           <div class="flex items-center space-x-3">
-//           <div className="w-13 h-13 border border-orange-400 rounded-full p-[5px]">
-//             <div class="w-10 h-10 flex items-center justify-center border-4 border-orange-400 rounded-full text-orange-500 font-semibold">
-//               4
-//             </div>
-//             </div>
-           
-//             <h3 class="text-lg font-bold">Clear is Kind</h3>
-//           </div>
-//           <p class="text-gray-600">
-//             Transparent, honest communication keeps everyone on the same page.
-//           </p>
-//         </div>
-//       </div>
-//     </section>
-  
-   
-   
-//     <div className="h-full w-full py-10 ">
-//       <h3 className="text-center text-4xl font-bold mb-10 text-gray-800">
-//         Our Team
-//       </h3>
-
-//       <div className="flex justify-center gap-8 transition-all duration-700 ease-in-out">
-//         {visibleMembers.map((member, i) => (
-//           <div key={i} className="flex flex-col items-center">
-//             <div className="relative w-80 h-80 bg-white rounded-xl shadow-md overflow-hidden hover:scale-105 transition-transform duration-500">
-//               <img
-//                 src={member.img}
-//                 alt={member.name}
-//                 className="w-full h-full object-cover"
-//               />
-//               <img
-//                 src={member.logo}
-//                 alt="Logo"
-//                 className="absolute top-3 left-0 w-16 h-16 rounded-full "
-//               />
-//             </div>
-
-//             <div className=" mt-4">
-//               <h4 className="text-lg font-semibold text-gray-800">{member.name}</h4>
-//               <p className="text-sm text-gray-500">{member.skills}</p>
-//             </div>
-//           </div>
-//         ))}
-//       </div>
-//     </div>
-
-     
-
-
 import { Dribbble, Facebook, Github, MessageCircle, Twitter } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const About = () => {
   const teamMembers = [
-    { img: "src/assets/ahmad.4b465c090513ec459867.png", logo: "src/assets/logo_without_text.8694dff2e5004a9c04bc.png", name: "Ahmad ali", skills: "UI/UX Designer" },
-    { img: "src/assets/humair.b53fe1d6abe0ecf40751.png", logo: "src/assets/logo_without_text.8694dff2e5004a9c04bc.png", name: "Ali Raza", skills: "Frontend Developer" },
-    { img: "src/assets/aqdas.d091e8270a272e1ee00c.png", logo: "src/assets/logo_without_text.8694dff2e5004a9c04bc.png", name: "Abdul Malik", skills: "Backend Engineer" },
-    { img: "src/assets/gull.a6d30c439a1b7a17af4e.png", logo: "src/assets/logo_without_text.8694dff2e5004a9c04bc.png", name: "Hassan Iqbal", skills: "Project Manager" },
-    { img: "src/assets/zahid.e7dfaacf216d8c2bb19c.png", logo: "src/assets/logo_without_text.8694dff2e5004a9c04bc.png", name: "Ahmed", skills: "QA Analyst" },
-    { img: "src/assets/arif.678a24bc2963ea5c1689.png", logo: "src/assets/logo_without_text.8694dff2e5004a9c04bc.png", name: "Usman Tariq", skills: "Full Stack Developer" },
+    { img: "../src/assets/ahmad.4b465c090513ec459867.png", logo: "../src/assets/logo_without_text.8694dff2e5004a9c04bc.png", name: "Ahmad ali", skills: "UI/UX Designer" },
+    { img: "../src/assets/humair.b53fe1d6abe0ecf40751.png", logo: "../src/assets/logo_without_text.8694dff2e5004a9c04bc.png", name: "Ali Raza", skills: "Frontend Developer" },
+    { img: "../src/assets/aqdas.d091e8270a272e1ee00c.png", logo: "../src/assets/logo_without_text.8694dff2e5004a9c04bc.png", name: "Abdul Malik", skills: "Backend Engineer" },
+    { img: "../src/assets/gull.a6d30c439a1b7a17af4e.png", logo: "../src/assets/logo_without_text.8694dff2e5004a9c04bc.png", name: "Hassan Iqbal", skills: "Project Manager" },
+    { img: "../src/assets/zahid.e7dfaacf216d8c2bb19c.png", logo: "../src/assets/logo_without_text.8694dff2e5004a9c04bc.png", name: "Ahmed", skills: "QA Analyst" },
+    { img: "../src/assets/arif.678a24bc2963ea5c1689.png", logo: "../src/assets/logo_without_text.8694dff2e5004a9c04bc.png", name: "Usman Tariq", skills: "Full Stack Developer" },
   ];
 
   const [startIndex, setStartIndex] = useState(0);
@@ -285,7 +49,7 @@ className="  rotate-180 "
 
       {/* CEO Section */}
       <div className="flex flex-col lg:flex-row items-center lg:items-start px-6 lg:px-20 py-12 gap-8">
-        <img className="w-48 sm:w-60 lg:w-72" src="src/assets/CEO.319188af9d31f98c8a3b.png" alt="CEO" />
+        <img className="w-48 sm:w-60 lg:w-72" src="../src/assets/CEO.319188af9d31f98c8a3b.png" alt="CEO" />
         <div className="flex flex-col max-w-2xl">
           <h1 className="text-3xl sm:text-4xl font-bold text-blue-950">Syed Aleem Haider</h1>
           <p className="text-blue-600 font-semibold text-lg sm:text-xl mt-2">Chief Executive Officer</p>
@@ -379,18 +143,6 @@ className="  rotate-180 "
       </div>
     </section>
 
-        
-
-
-
-
-
-
-
-
-
-
-
      
    
       <section
@@ -471,7 +223,7 @@ className="  rotate-180 "
             <div className="mb-6 md:mb-0">
               <a href="#/" className="flex items-center">
                 <img
-                  src="src/assets/logo_without_line.bdc589508ea85f49e393.png"
+                  src="../src/assets/logo_without_line.bdc589508ea85f49e393.png"
                   className="h-12 me-3"
                   alt="Devspots Logo"
                 />
