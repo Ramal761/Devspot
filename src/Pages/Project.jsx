@@ -117,7 +117,6 @@ const Project = () => {
             </p>
           </div>
 
-          {/* Right Form Section */}
           <form className="bg-gradient-to-tr from-[#ED8B29] to-[#FFD23F] rounded-3xl px-10 py-10 flex flex-col gap-5 w-full max-w-xl shadow-lg">
             <input
               type="text"
@@ -172,7 +171,6 @@ const Project = () => {
         </div>
       </section>
 
-      {/* 🔹 Footer */}
       <footer className="bg-gray-100 border-t border-gray-300 mt-6">
         <div className="mx-auto w-full max-w-screen-xl p-6 lg:py-8">
           <div className="md:flex md:justify-between">

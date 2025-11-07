@@ -6,7 +6,7 @@ import Blog from "./Pages/Blogs";
 import BlogDetail from "./Pages/BlogDetail";
 import ProjectDetail from "./Pages/Projectdetail";
 import { useEffect, useState } from "react";
-import { Menu, X, MessageCircle, PhoneCall } from "lucide-react"; // Added WhatsApp icon
+import { Menu, X, MessageCircle, PhoneCall } from "lucide-react"; 
 
 function App() {
   const [animate, setAnimate] = useState(false);
@@ -105,7 +105,6 @@ function App() {
         </div>
       )}
 
-      {/* 🔹 Routes */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

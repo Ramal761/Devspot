@@ -105,7 +105,6 @@ const BlogDetail = () => {
         className="w-full min-h-screen flex items-start justify-center bg-white px-6"
       >
         <div className="flex flex-col lg:flex-row gap-6 lg:gap-10 max-w-6xl w-full">
-          {/* Left Text Section */}
           <div className="flex flex-col w-full max-w-xl lg:text-left">
             <h1 className="text-4xl font-semibold text-gray-800 mb-3">
               <span className="text-orange-400">Contact</span> Us
@@ -116,7 +115,6 @@ const BlogDetail = () => {
             </p>
           </div>
 
-          {/* Right Form Section */}
           <form className="bg-gradient-to-tr from-[#ED8B29] to-[#FFD23F] rounded-3xl px-10 py-10 flex flex-col gap-5 w-full max-w-xl shadow-lg">
             <input
               type="text"
@@ -171,7 +169,6 @@ const BlogDetail = () => {
         </div>
       </section>
 
-      {/* 🔹 Footer */}
       <footer className="bg-gray-100 border-t border-gray-300 mt-6">
         <div className="mx-auto w-full max-w-screen-xl p-6 lg:py-8">
           <div className="md:flex md:justify-between">
